@@ -1,0 +1,6 @@
+## FOR OSX ##
+.DS_store
+
+## except other prj ##
+Practice/
+ExamplePrj_01/
