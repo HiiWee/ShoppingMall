@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  
+  <title>JavaScript Output</title>
+</head>
+
+<body>
+  <h1>Window 객체의 alert() 메소드</h1>
+  <button onclick="alertDialogBox()">alert 대화 상자</button>
+
+  <p>
+    키보드의 F12 버튼을 누른 후, 메뉴에서 console 탭 메뉴를 클릭하면 콘솔 화면을 사용할 수 있습니다.
+  </p>
+
+  <script src="scripts/practice01.js"></script>
+  <!-- 스크립트는 외부파일 또는 내부파일을 적용할 수 있다. 아래는 내부파일
+       body 하단 영역에 위치하는것이 제일 바람직하다. -->
+  <!-- <script>
+    function alertDialogBox() {
+      // alert(), confirm()은 DB연동시 실질적인 값을 체크하는 유효성 검사에 많이 사용됨
+      // alert("확인을 누를 때까지 다른 작업을 할 수 없습니다."); 
+      //confirm("간단한 메시지");   // 값의 유무를 참, 거짓을 따질때 많이 사용된다. (로그인 등등)
+      if (confirm("확실합니까?") == true) {
+        //true
+        alert("확인 버튼을 누르셨군요");
+        console.log("확인");
+      } else {
+        //false
+        alert("취소 버튼을 누르셨군요");
+      }
+    }
+
+    console.log(2 * 7);
+  </script>
+-->
+</body>
+
+</html>
