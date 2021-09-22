@@ -1,6 +1,9 @@
 ## FOR OSX ##
 .DS_store
 
+## Vscode ##
+.vscode/
+
 ## except other prj ##
 Practice/
 ExamplePrj_01/
