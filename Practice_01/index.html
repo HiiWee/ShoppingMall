@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  
+
   <title>JavaScript Output</title>
 </head>
 
@@ -14,11 +14,52 @@
   <p>
     키보드의 F12 버튼을 누른 후, 메뉴에서 console 탭 메뉴를 클릭하면 콘솔 화면을 사용할 수 있습니다.
   </p>
-  
+
   <button onclick="changeType()">타입변환버튼</button>
+
+  <br>
+  <h1>HTML 태그 이름을 이용한 선택</h1>
+  <ul>
+    <!-- id는 로직적인 부분, class는 css적인 부분에서 많이 사용된다. -->
+    <li class="odd">첫 번째 아이템</li>
+    <li id="even">두 번째 아이템</li>
+    <li class="odd">세 번째 아이템</li>
+    <li id="even">네 번째 아이템</li>
+    <li class="odd">다섯 번째 아이템</li>
+    <li id="even">여섯 번째 아이템</li>
+    <li class="odd">일곱 번째 아이템</li>
+    <li id="even">여덣 번째 아이템</li>
+    <li class="odd">아홉 번째 아이템</li>
+    <li class="apple">10 아이템</li>
+    <li name="first">11 아이템</li>
+    <li class="apple">12 아이템</li>
+    <li name="first">13 아이템</li>
+    <li class="apple">14 아이템</li>
+    <li name="first">15 아이템</li>
+    <li class="apple">16 아이템</li>
+  </ul>
+
+  <p name="first"> 자바스크립트 너무너무 재밌어요 !!</p>
+  <p class="apple"> 자바스크립트 너무너무 재밌어요 !!</p>
+
+  <h1> innerHTML을 이용한 요소의 내용 변경 </h1>
+  <p id="text">이 문장을 바꿀거에요!!!</p>
+  <button onclick="changeText()">텍스트 변경</button>
+
+
+  <h1>속성 이름을 이용한 속성 값 변경</h1>
+  <a id="link" href="https://naver.com">인기있는 포털사이트로 이동해줘!</a>
+  <button onclick="changeLink()">포털변경</button>
+  <br>
+
+
+  <h1>DOM 요소의 스타일 변경</h1>
+  <p id="coke">이 문자열의 기본색은 검정색입니다.</p>
+  <button onclick="changeColorRed()">RED</button>
+  <button onclick="changeColorYellow()">YELLOW</button>
+
   <!-- 외부참조 -->
   <script src="scripts/practice01.js"></script>
-  
 </body>
 
 </html>
