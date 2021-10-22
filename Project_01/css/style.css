@@ -1,0 +1,165 @@
+/* 7주차 실습 */
+/* Cascading Style Sheets
+   HTML 파일을 작성할 때 글자의 크기나 색깔, 여백 등의 각종 스타일을 지정할 때 사용하는 것 입니다. 
+/* 
+8주차 
+인코딩설정,
+인코딩 설정, homelogo 태그 자식선택자 수정
+ */
+@charset "utf-8";
+
+.header_div {
+  background-color: rgb(128, 147, 250);
+  width: 1000px;
+  margin: 0 auto;
+}
+/* homelogo 하이퍼링크 언더바 지움 */
+.header > p > a{
+  text-decoration: none;
+}
+.header font{
+  color: white;
+}
+.nav {
+  background-color: rgb(61, 66, 83);
+  height: 30px;
+  padding: 10px 0;
+  /* padding-top: 10px; */
+  /* padding-bottom: 10px; */
+}
+.nav > a {
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: inherit;
+  color:white;
+  margin-left: 50px;
+}
+.content_div {
+  position: relative;
+  margin: 0 auto;
+  width: 1000px;
+}
+
+.aside {
+  background-color: rgb(100, 102, 110);
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 43%;
+  height: auto;
+  color: white;
+}
+.content_div > .aside {
+  padding: 10px;
+}
+.footer_div{
+  background-color: rgb(100, 102, 110);
+  width: 1000px;
+  margin: 0 auto;
+  /* color: white; */
+}
+.footer_div font {
+  color: white;
+}
+
+
+/* s3.html 영역 */
+.frontEnd {
+  width: 560px;
+  height: auto;;
+}
+.backEnd {
+  width: 560px;
+  height: auto;;
+}
+.fullStack {
+  width: 560px;
+  height: auto;; 
+}
+
+/* s4.html 영역 */
+.s4_table {
+  /* border: 1px solid #000; */
+  width: 1000px;
+  text-align: center;
+  border-collapse: collapse;
+}
+.s4_table td {
+  /* border: 1px solid #000; */
+}
+.s4_table img {
+  width: 331px;
+  height: auto;
+}
+
+
+
+/* login_main.html */
+/* 로그인 화면 전체 div 설정 */
+.content_div_login {
+  background-color: rgba(28, 47, 153, 0.616);
+  position: relative;
+  width: 500px;
+  height: 450px;
+  margin: 50px auto;
+}
+/* login 타이틀 글자 */
+.main_title {
+  color: white;     /*글씨 컬러 설정*/
+  font-size: 50px;    /* 글씨 크기 설정 */
+  font-weight: bold;  /* 글씨 굵기 설정 */
+  margin-top: 30px;   /* 위에서 부터 간격 설정 */
+  margin-bottom: 30px;/* 아이디. 비번 입력칸의 간격 설정*/ 
+}
+
+.id_pw_table {
+  height: 40px;
+  width: 430px;
+  border: solid 4px white;
+  margin-top: 1%;
+}
+
+/* id, pw 입력 textbox설정 */
+.id_pw_input {
+  height: 40px;
+  width: 410px;
+  font-size: 15px;
+}
+
+/* 로그인 버튼 table 설정 */
+.login_btn_table {
+  height: 40px;
+  width: 430px;
+  margin-top: 1%;
+}
+
+/* 로그인 버튼 설정 */
+.login_btn {
+  background-color: rgb(99, 102, 150);
+  color: white;
+  height: 40px;
+  width: 430px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer
+}
+
+/* 로그인 하위 메뉴 경계선 설정 */
+.menu_line {
+  height: 0;
+  width: 430px;
+  border: solid 1px white;
+  margin-top: 2%;
+}
+
+/* 로그인 하위 메뉴: 기본 설정 */
+.login_sub_menu {
+  height: 50px;
+  margin-top: 1%;
+}
+/* 로그인 하위 메뉴: 글자설정 */
+.login_sub_menu a {
+  color:white;
+  text-decoration: none;
+}
