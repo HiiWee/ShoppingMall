@@ -163,3 +163,45 @@
   color:white;
   text-decoration: none;
 }
+
+
+
+/* 8주차 */
+/* signUp.html */
+/* 회원가입화면 전체 div 설정 */
+.content_div_signUp {
+  background-color: grey;
+  position: relative;
+  width: 1000px;
+  margin: 10px auto;
+}
+
+/* title 테이블 설정 */
+.signUp_table {
+  background-color: grey;
+  color: white;
+  font-size: 15pt;
+  font-weight: bold;
+}
+
+/* input 태그 전체 설정 */
+.signUp_table input {
+  width: 300px;
+  height: 30px;
+}
+
+/* 가입하기 버튼 table 설정 */
+.signUp_btn_table {
+  margin-top: 1%;
+}
+
+.signUp_btn {
+  height: 45px;
+  width: 306px;
+  background-color: rgb(83, 83, 83);
+  color: white;
+  font-size: 20pt;
+  font-weight: bold;
+  border: solid 1px rgb(88, 88, 88);
+  cursor: pointer;
+}

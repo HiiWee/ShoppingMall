@@ -8,7 +8,7 @@
   <meta name="keywords" content="HTML5, CSS, JavaScript">
   <!-- 웹 페이지와 외부 자원간의 관계를 정의, 주로 스타일시트(CSS)파일 링크에 사용됨. -->
   <link rel="stylesheet" type="text/css" href="../css/style.css">
-  <title>Welcome !!</title>
+  <title>로그인 성공!!</title>
 </head>
 
 <body>
@@ -17,7 +17,7 @@
     <!-- 사이트의 소개나 네이게이션 등을 표현하는 영역 -->
     <header class="header">
       <p>
-        <a href="../index.html">
+        <a href="index.html">
           <img src="../images/homelogo.png" width="70px;">
         </a>
         <font>헤더영역 (사진 클릭시 메인홈페이지로 이동)</font>
@@ -25,55 +25,56 @@
       <!-- 네비게이션 영역 시작 -->
       <!-- 사이트의 네비게이션(메뉴) 항목을 표시 -->
       <nav class="nav">
-        <a href="../index.html">메인으로</a>
+        <a href="index.html">메인으로</a>
         <a href="s1.html">첫번째 메뉴</a>
         <a href="s2.html">두번째 메뉴</a>
         <a href="s3.html">세번째 메뉴</a>
         <a href="s4.html">사진첩</a>
-        <a href="login_main.html" style ="margin-left: 180px;">Login</a>
+        <a href="../index.html" style ="margin-left: 180px;">Logout</a>
       </nav>
       <!-- 네비게이션 영역 끝 -->
     </header>
     <!-- 헤더영역 끝 -->
   </div>
   <!-- 콘텐츠 및 섹션 영역 시작 -->
-  <br>
   <div class="content_div">
-    <table class="s4_table">
-      <tr>
-        <td>
-          <img src="../images/homelogo.png">
-        </td>
-        <td>
-          <img src="../images/homelogo.png">
-        </td>
-        <td>
-          <img src="../images/homelogo.png">
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <img src="../images/front.png" alt="FrontEnd">
-        </td>
-        <td><img src="../images/backend.png" alt="BackEnd"></td>
-        <td><img src="../images/fullstack.png" alt="FullStack"></td>
-      </tr>
-      <tr>
-        <td>
-          <img src="../images/mask.jpg" alt="Mask">
-        </td>
-        <td>
-          <img src="../images/mask.jpg" alt="Mask">
-        </td>
-        <td>
-          <img src="../images/mask.jpg" alt="Mask">
-        </td>
-      </tr>
-    </table>
+    <article>
+      <header>
+        <h1>음악 플레이리스트-2</h1>
+        <p>Hiphop, Pop, Lofi</p>
+      </header>
+
+      <section>
+        <h2>Hip-Hop Mix-1</h2>
+        <p>Various Artist</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Pq90ZdLtoqw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </section>
+      
+      <section>
+        <h2>Hip-Hop Mix-2</h2>
+        <p>Various Artist</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dV8ohb5Arm8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </section>
+      
+      <section>
+        <h2>Lofi Playlist</h2>
+        <p>A good song to listen to when coding</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/cbuZfY2S2UQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </section>
+    </article>
+    
+    <aside class="aside">
+      <h3>
+        <font>잡설</font>
+      </h3>
+      <p>
+        <font>노래는 신나야 제 맛</font>
+      </p>
+    </aside>
   </div>
   <!-- 콘텐츠 및 섹션 영역 끝 -->
   <br>
-  
+
    <!-- footer영역의 시작 -->
    <div class="footer_div">
     <footer>
@@ -86,6 +87,7 @@
     </footer>
   </div>
   <!-- footer영역의 끝 -->
+
 </body>
 
 </html>

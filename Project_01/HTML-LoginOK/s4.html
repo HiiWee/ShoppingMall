@@ -1,4 +1,4 @@
-<!-- 7주차 실습, 8주차 실습 -->
+<!-- 9주차 실습 -->
 <!DOCTYPE html>
 <html lnag="ko">
 
@@ -7,8 +7,8 @@
   <meta name="description" content="프로젝트_01">
   <meta name="keywords" content="HTML5, CSS, JavaScript">
   <!-- 웹 페이지와 외부 자원간의 관계를 정의, 주로 스타일시트(CSS)파일 링크에 사용됨. -->
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Welcome !!</title>
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <title>로그인 성공!!</title>
 </head>
 
 <body>
@@ -18,7 +18,7 @@
     <header class="header">
       <p>
         <a href="index.html">
-          <img src="images/homelogo.png" width="70px;">
+          <img src="../images/homelogo.png" width="70px;">
         </a>
         <font>헤더영역 (사진 클릭시 메인홈페이지로 이동)</font>
       </p>
@@ -26,50 +26,53 @@
       <!-- 사이트의 네비게이션(메뉴) 항목을 표시 -->
       <nav class="nav">
         <a href="index.html">메인으로</a>
-        <a href="HTML/s1.html">첫번째 메뉴</a>
-        <a href="HTML/s2.html">두번째 메뉴</a>
-        <a href="HTML/s3.html">세번째 메뉴</a>
-        <a href="HTML/s4.html">사진첩</a>
-        <a href="HTML/login_main.html" style="margin-left: 180px;">Login</a>
+        <a href="s1.html">첫번째 메뉴</a>
+        <a href="s2.html">두번째 메뉴</a>
+        <a href="s3.html">세번째 메뉴</a>
+        <a href="s4.html">사진첩</a>
+        <a href="../index.html" style="margin-left: 180px;">Logout</a>
       </nav>
       <!-- 네비게이션 영역 끝 -->
     </header>
     <!-- 헤더영역 끝 -->
   </div>
   <!-- 콘텐츠 및 섹션 영역 시작 -->
+  <br>
   <div class="content_div">
-    <article>
-      <header>
-        <h1>article 헤더 영역</h1>
-        <p>다른 사람들이 뭐라하건 내가 좋아하는 것이 가장 소중하다.</p>
-      </header>
-
-      <section>
-        <h2>첫번째 섹션</h2>
-        <p>다른 사람들이 뭐라하건 내가 좋아하는 것이 가장 소중하다.</p>
-      </section>
-
-      <section>
-        <h2>두번째 섹션</h2>
-        <p>다른 사람들이 뭐라하건 내가 좋아하는 것이 가장 소중하다.</p>
-      </section>
-
-      <section>
-        <h2>세번째 섹션</h2>
-        <p>다른 사람들이 뭐라하건 내가 좋아하는 것이 가장 소중하다.</p>
-      </section>
-    </article>
-
-    <aside class="aside">
-      <h3>사이드바</h3>
-      <p>
-        <font>aside 태그는 본문의 내용과는 독립적인 내용인 사이드바 콘텐츠를 표시한다.</font>
-      </p>
-    </aside>
+    <table class="s4_table">
+      <tr>
+        <td>
+          <img src="../images/homelogo.png">
+        </td>
+        <td>
+          <img src="../images/homelogo.png">
+        </td>
+        <td>
+          <img src="../images/homelogo.png">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img src="../images/front.png" alt="FrontEnd">
+        </td>
+        <td><img src="../images/backend.png" alt="BackEnd"></td>
+        <td><img src="../images/fullstack.png" alt="FullStack"></td>
+      </tr>
+      <tr>
+        <td>
+          <img src="../images/mask.jpg" alt="Mask">
+        </td>
+        <td>
+          <img src="../images/mask.jpg" alt="Mask">
+        </td>
+        <td>
+          <img src="../images/mask.jpg" alt="Mask">
+        </td>
+      </tr>
+    </table>
   </div>
   <!-- 콘텐츠 및 섹션 영역 끝 -->
-
-
+  <br>
 
   <!-- footer영역의 시작 -->
   <div class="footer_div">
