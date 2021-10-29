@@ -62,7 +62,7 @@ function loginChk() {
     var birthDay = document.getElementById("birthDay").value;
     var signUpGen = document.getElementById("signUpGen").value;
     var signUpPhnNum = document.getElementById("signUpPhnNum").value;
-    var signUpMail = document.getElementById("signUpMail").value
+    var signUpMail = document.getElementById("signUpMail").value;
     // 패턴체크
     var patternChk1 = /['~!@#$%^&*|\\\'\";:\/?]/gi; //아이디 특수문자 체크
 
