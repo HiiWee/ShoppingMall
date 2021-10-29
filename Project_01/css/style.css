@@ -166,7 +166,10 @@
 
 
 
-/* 8주차 */
+/*
+--------------------------------------------------------------------------- 
+                      8주차 signUp.html
+--------------------------------------------------------------------------- */
 /* signUp.html */
 /* 회원가입화면 전체 div 설정 */
 .content_div_signUp {
@@ -195,6 +198,7 @@
   margin-top: 1%;
 }
 
+/* 가입하기 버튼 설정 */
 .signUp_btn {
   height: 45px;
   width: 306px;
@@ -203,5 +207,48 @@
   font-size: 20pt;
   font-weight: bold;
   border: solid 1px rgb(88, 88, 88);
+  cursor: pointer;
+}
+
+/*
+--------------------------------------------------------------------------- 
+                               아이디, 비밀번호 찾기 화면 (9주차)
+--------------------------------------------------------------------------- */
+/* 아이디 비밀번호 찾기 전체 div 설정 */
+.content_div_findInfo {
+  background-color: gray;
+  position: relative;
+  width: 1000px;
+  margin: 10px auto;
+}
+
+/* 테이블 설정 */
+.findInfo_table {
+  background-color: gray;
+  color: white;
+  font-size: 15pt;
+  font-weight: bold;
+}
+
+/* 테이블 설정 : input:text */
+.findInfo_table  input {
+  width: 300px;
+  height: 30px;
+}
+
+/* 테이블 설정 : button */
+.findInfo_btn_table {
+  margin-top: 1%;
+}
+
+/* 인증번호 받기, 아이디 찾기 버튼 설정 */
+.findInfo_btn {
+  height: 45px;
+  width: 306px;
+  background-color: black;
+  color: white;
+  font-size: 20pt;
+  font-weight: bold;
+  border: solid 1px black;
   cursor: pointer;
 }
