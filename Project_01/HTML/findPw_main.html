@@ -7,7 +7,7 @@
   <meta name="keywords" content="HTML5, CSS, J">
   <!-- 웹 페이지와 외부 자원간의 관계를 정의, 주로 스타일시트(CSS)파일 링크에 사용됨. -->
   <link rel="stylesheet" type="text/css" href="../css/style.css">
-  <title>아이디 찾기</title>
+  <title>비밀번호 찾기</title>
 </head>
 
 <body>
@@ -24,7 +24,7 @@
       <!-- 네비게이션 영역 시작 -->
       <!-- 사이트의 네비게이션(메뉴) 항목을 표시 -->
       <nav class="nav">
-        <a>아이디 찾기 &nbsp; | &nbsp; 정확한 정보를 입력하세요 &nbsp; |</a>
+        <a>비밀번호 찾기 &nbsp; | &nbsp; 정확한 정보를 입력하세요 &nbsp; |</a>
       </nav>
       <!-- 네비게이션 영역 끝 -->
     </header>
@@ -35,6 +35,14 @@
   <div class="content_div_findInfo">
     <br>
     <table class="findInfo_table" align="center">
+      <tr>
+        <td>아이디</td>
+      </tr>
+      <tr>
+        <td>
+          <input id="findInfoId" type="text">
+        </td>
+      </tr>
       <tr>
         <td>이름</td>
       </tr>
@@ -57,7 +65,7 @@
     <table class="findInfo_btn_table" align="center">
       <tr>
         <td>
-          <input class="findInfo_btn" onclick="certificationNumReceive()"type="button" value="인증번호 받기">
+          <input class="findInfo_btn" onclick="certificationNumReceive2()"type="button" value="인증번호 받기">
         </td>
       </tr>
     </table>
@@ -74,11 +82,11 @@
       </tr>
     </table>
 
-    <!-- 아이디 찾기 버튼 -->
+    <!-- 비밀번호 찾기 버튼 -->
     <table class="findInfo_btn_table" align="center">
       <tr>
         <td>
-          <input class="findInfo_btn" onclick="findIdChk()" type="button" value="아이디찾기">
+          <input class="findInfo_btn" onclick="findPwChk()" type="button" value="아이디찾기">
         </td>
       </tr>
     </table>
