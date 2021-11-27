@@ -1,0 +1,58 @@
+.newArrivals .items {
+  display: table;
+}
+.newArrivals .items .itemsCell {
+  /* background-color: red; */
+  display: table-cell;
+  padding: 5px;
+}
+.newArrivals .items .itemsInfo {
+  text-align: left;
+}
+.newArrivals .items .itemsInfo .itemsInfo_name {
+  text-decoration: none;
+  color:rgb(66, 66, 66);
+}
+.newArrivals .items .itemsInfo .itemsInfo_name:hover {
+  background-color: rgb(224, 224, 224);
+}
+.newArrivals img {
+  width: 960px;
+}
+
+.newArrivals {
+  position: relative;
+}
+.newArrivals .items2 {
+  list-style-type: none;
+  position: fixed;
+  top: 30%;
+  right: 1%;
+  padding: 10px;
+  text-align: left;
+  width: 400px;
+}
+.newArrivals .items2 .itemsInfo_category {
+  color:rgb(66, 66, 66);
+}
+.newArrivals .items2 .itemsInfo_name {
+  font-weight: bold;
+  font-size: 20px;
+}
+.newArrivals .items2 select {
+  width: 400px;
+  height: 40px;
+  margin-top: 1%;
+}
+.newArrivals .items2 .paymentInfo input {
+  width: 400px;
+  height: 40px;
+  margin-top: 5%;
+  font-weight: bold;
+}
+.newArrivals .items2 .cartInfo input {
+  width: 400px;
+  height: 40px;
+  margin-top: 1%;
+  font-weight: bold;
+}

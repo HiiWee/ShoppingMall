@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Hoseok's Shopping Mall</title>
+  <link rel="stylesheet" href="../../../css/style.css">
+  <link rel="stylesheet" href="../../../css/menu.css">
+  <link rel="stylesheet" href="../../../css/information.css">
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="titleBar">
+        <a href="../../main.html">Shopping Mall</a>
+      </div>
+      <div class="logIn">
+        <a onclick="logoutChk()" style="cursor: pointer;">로그아웃</a>
+      </div>
+      <div class="navigation">
+        <ul class="main_menu">
+          <li><a href="../../infoMain.html">INFORMATION</a></li>
+          <li><a href="#none">SELECTED ITEMS</a>
+            <ul class="sub_menu">
+              <li><a href="../newArrivals.html">NEW ARRIVALS</a></li>
+            </ul>
+            <ul class="sub_menu">
+              <li><a href="../outwears.html">OUTWEARS</a></li>
+              <li><a href="../knitwears.html">KNITWEARS</a></li>
+              <li><a href="../tops.html">TOPS</a></li>
+              <li><a href="../shirts.html">SHIRTS</a></li>
+            </ul>
+            <ul class="sub_menu">
+              <li><a href="../pants.html">PANTS</a></li>
+              <li><a href="../denim.html">DENIM</a></li>
+              <li><a href="../acc.html">ACC</a></li>
+              <li><a href="../shoes.html">SHOES</a></li>
+            </ul>
+          </li>
+          <li><a href="#none">COLLECTION</a>
+            <ul class="sub_menu">
+              <li><a href="../../COLLECTION/winter.html">2021 WINTER</a></li>
+              <li><a href="../../COLLECTION/fall.html">2021 FALL</a></li>
+              <li><a href="../../COLLECTION/summer.html">2021 SUMMER</a></li>
+              <li><a href="../../COLLECTION/spring.html">2021 SPRING</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <div class="newArrivals">
+        <ul class="items">
+          <li class="itemsCell">
+            <div class="itemsImg">
+              <img src="../../../images/SELECTEDITEM/new_arrivals/fourth.jpg">
+            </div>
+          </li>
+        </ul>
+        <ul class="items2">
+          <li class="itemsCell">
+            <div class="itemsInfo">
+              <div class="itemsInfo_category">SELECTED ITEM</div>
+              <br>
+              <div id="itemsInfo_name">(Selected) 테일 벨티드 슬랙스</div>
+              <div id="itemsInfo_price">43,200 KRW</div>
+              <p>
+                <br>
+                전면의 딥한 원턱 디테일과 끝이 자연스럽게 좁아지는 테이퍼트 아웃핏이 매력적인 벨티드 슬랙스<br>
+                사이드 플리츠 디테일과 탈부착 가능한 벨트로 멋스러운 아웃핏 연출 가능<br>
+                도톰한 두께감으로 추운 계절 착용하기 좋은 제품<br>
+                <br>
+                혼용률 : 폴리에스터(Polyester) 68% 레이온(Rayon) 30% 스판(Span) 2%<br>
+                <br>
+              </p>
+              <div class="itemSelectColor">
+                <select id="itemsColor">
+                  <option value="">Color</option>
+                  <option value="">---------------------------------------</option>
+                  <option value="black">black</option>
+                </select>
+              </div>
+              <div class="itemSelectSize">
+                <select id="itemsSize">
+                  <option value="">Size</option>
+                  <option value="">---------------------------------------</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                </select>
+              </div>
+            </div>
+            <div class="paymentInfo">
+              <input type="button" value="BUY NOW" onclick="requestPay()">
+            </div>
+            <div class="cartInfo">
+              <input type="button" value="ADD TO CART" onclick="addCart()">
+            </div>
+          </li>
+        </ul>
+      </div>
+    </main>
+
+    <footer>
+      <small>Copyright by Hoseok Lee</small>
+    </footer>
+
+  </div>
+
+  <script type="text/javascript" src="../../../scripts/common.js"></script>
+</body>
+
+</html>

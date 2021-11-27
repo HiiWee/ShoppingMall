@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Hoseok's Shopping Mall</title>
+  <link rel="stylesheet" href="../../../css/style.css">
+  <link rel="stylesheet" href="../../../css/menu.css">
+  <link rel="stylesheet" href="../../../css/information.css">
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="titleBar">
+        <a href="../../main.html">Shopping Mall</a>
+      </div>
+      <div class="logIn">
+        <a onclick="logoutChk()" style="cursor: pointer;">로그아웃</a>
+      </div>
+      <div class="navigation">
+        <ul class="main_menu">
+          <li><a href="../../infoMain.html">INFORMATION</a></li>
+          <li><a href="#none">SELECTED ITEMS</a>
+            <ul class="sub_menu">
+              <li><a href="../newArrivals.html">NEW ARRIVALS</a></li>
+            </ul>
+            <ul class="sub_menu">
+              <li><a href="../outwears.html">OUTWEARS</a></li>
+              <li><a href="../knitwears.html">KNITWEARS</a></li>
+              <li><a href="../tops.html">TOPS</a></li>
+              <li><a href="../shirts.html">SHIRTS</a></li>
+            </ul>
+            <ul class="sub_menu">
+              <li><a href="../pants.html">PANTS</a></li>
+              <li><a href="../denim.html">DENIM</a></li>
+              <li><a href="../acc.html">ACC</a></li>
+              <li><a href="../shoes.html">SHOES</a></li>
+            </ul>
+          </li>
+          <li><a href="#none">COLLECTION</a>
+            <ul class="sub_menu">
+              <li><a href="../../COLLECTION/winter.html">2021 WINTER</a></li>
+              <li><a href="../../COLLECTION/fall.html">2021 FALL</a></li>
+              <li><a href="../../COLLECTION/summer.html">2021 SUMMER</a></li>
+              <li><a href="../../COLLECTION/spring.html">2021 SPRING</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <div class="newArrivals">
+        <ul class="items">
+          <li class="itemsCell">
+            <div class="itemsImg">
+              <img src="../../../images/SELECTEDITEM/outwears/second.jpg">
+            </div>
+          </li>
+        </ul>
+        <ul class="items2">
+          <li class="itemsCell">
+            <div class="itemsInfo">
+              <div class="itemsInfo_category">SELECTED ITEM</div>
+              <br>
+              <div id="itemsInfo_name">(Selected) 보니 울 후드 숏 코트</div>
+              <div id="itemsInfo_price">106,200 KRW</div>
+              <p>
+                <br>
+                퀄리티가 우수한 울 함유의 원단으로 제작된 숏 코트<br>
+                3온스 누빔 안감으로 보온성을 높여 따뜻하게 착용할 수 있는 아이템<br>
+                전면 유틸 포켓 디자인과 히든 포켓으로 트렌디하고 캐주얼한 무드 연출<br>
+                탈부착이 가능한 넥의 스트랩으로 다양한 스타일링 연출 가능<br>
+                <br>
+                혼용률 : 울(Wool) 50% 폴리에스터(Polyester) 50%<br><br>
+              </p>
+              <div class="itemSelectColor">
+                <select id="itemsColor">
+                  <option value="">Color</option>
+                  <option value="">---------------------------------------</option>
+                  <option value="black">black</option>
+                </select>
+              </div>
+              <div class="itemSelectSize">
+                <select id="itemsSize">
+                  <option value="">Size</option>
+                  <option value="">---------------------------------------</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                </select>
+              </div>
+            </div>
+            <div class="paymentInfo">
+              <input type="button" value="BUY NOW" onclick="requestPay()">
+            </div>
+            <div class="cartInfo">
+              <input type="button" value="ADD TO CART" onclick="addCart()">
+            </div>
+          </li>
+        </ul>
+      </div>
+    </main>
+
+    <footer>
+      <small>Copyright by Hoseok Lee</small>
+    </footer>
+
+  </div>
+
+  <script type="text/javascript" src="../../../scripts/common.js"></script>
+</body>
+
+</html>

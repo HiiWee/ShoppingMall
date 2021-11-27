@@ -132,7 +132,6 @@ function addAnswer(obj, text) {
 
   newP.innerHTML = text;
   o.appendChild(newP);
-
   newP.onclick = function() {     //p 태그를 누르면 자기 자신이 사라짐
     var p = this.parentElement;
     if(confirm("정말 삭제하시겠습니까?") == true) {

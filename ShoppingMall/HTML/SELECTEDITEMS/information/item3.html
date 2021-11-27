@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Hoseok's Shopping Mall</title>
+  <link rel="stylesheet" href="../../../css/style.css">
+  <link rel="stylesheet" href="../../../css/menu.css">
+  <link rel="stylesheet" href="../../../css/information.css">
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="titleBar">
+        <a href="../../main.html">Shopping Mall</a>
+      </div>
+      <div class="logIn">
+        <a href="../../login_main.html">로그인</a>
+      </div>
+      <div class="navigation">
+        <ul class="main_menu">
+          <li><a href="../../infoMain.html">INFORMATION</a></li>
+          <li><a href="#none">SELECTED ITEMS</a>
+            <ul class="sub_menu">
+              <li><a href="../newArrivals.html">NEW ARRIVALS</a></li>
+            </ul>
+            <ul class="sub_menu">
+              <li><a href="../outwears.html">OUTWEARS</a></li>
+              <li><a href="../knitwears.html">KNITWEARS</a></li>
+              <li><a href="../tops.html">TOPS</a></li>
+              <li><a href="../shirts.html">SHIRTS</a></li>
+            </ul>
+            <ul class="sub_menu">
+              <li><a href="../pants.html">PANTS</a></li>
+              <li><a href="../denim.html">DENIM</a></li>
+              <li><a href="../acc.html">ACC</a></li>
+              <li><a href="../shoes.html">SHOES</a></li>
+            </ul>
+          </li>
+          <li><a href="#none">COLLECTION</a>
+            <ul class="sub_menu">
+              <li><a href="../../COLLECTION/winter.html">2021 WINTER</a></li>
+              <li><a href="../../COLLECTION/fall.html">2021 FALL</a></li>
+              <li><a href="../../COLLECTION/summer.html">2021 SUMMER</a></li>
+              <li><a href="../../COLLECTION/spring.html">2021 SPRING</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <div class="newArrivals">
+        <ul class="items">
+          <li class="itemsCell">
+            <div class="itemsImg">
+              <img src="../../../images/SELECTEDITEM/new_arrivals/third.jpg">
+            </div>
+          </li>
+        </ul>
+        <ul class="items2">
+          <li class="itemsCell">
+            <div class="itemsInfo">
+              <div class="itemsInfo_category">SELECTED ITEM</div>
+              <br>
+              <div id="itemsInfo_name">(Selected) 리버시블 MA-1 다운 자켓</div>
+              <div id="itemsInfo_price">178,200 KRW</div>
+              <p>
+                <br>
+                솜털 90% 깃털 10%의 덕 다운 충전재로 보온성을 높이고 가벼운 중량감의 패딩 자켓<br>
+                투 웨이 YKK 지퍼와 리버시블(양면) 디자인으로 다양한 스타일링 가능<br>
+                카라 리스 디자인으로 다양한 이너와 매치할 수 있으며 트렌디한 MA-1 자켓의 디자인이 포인트인 제품<br>
+                드롭 숄더와 볼륨 있는 소매의 아웃핏으로 캐주얼하고 유니크한 무드 연출<br>
+                <br>
+                혼용률 : 겉감 Polyester 100% 안감 Polyester 100%<br>
+                충전재 : 솜털(Down) 90% 깃털(Feather) 10%<br>
+                <br>
+              </p>
+              <div class="itemSelectColor">
+                <select id="itemsColor">
+                  <option value="">Color</option>
+                  <option value="">---------------------------------------</option>
+                  <option value="black">black</option>
+                </select>
+              </div>
+              <div class="itemSelectSize">
+                <select id="itemsSize">
+                  <option value="">Size</option>
+                  <option value="">---------------------------------------</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                </select>
+              </div>
+            </div>
+            <div class="paymentInfo">
+              <input type="button" value="BUY NOW" onclick="requestPay()">
+            </div>
+            <div class="cartInfo">
+              <input type="button" value="ADD TO CART" onclick="addCart()">
+            </div>
+          </li>
+        </ul>
+      </div>
+    </main>
+
+    <footer>
+      <small>Copyright by Hoseok Lee</small>
+    </footer>
+
+  </div>
+
+  <script type="text/javascript" src="../../../scripts/common.js"></script>
+</body>
+
+</html>

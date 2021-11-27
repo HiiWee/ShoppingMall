@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Hoseok's Shopping Mall</title>
+  <link rel="stylesheet" href="../../../css/style.css">
+  <link rel="stylesheet" href="../../../css/menu.css">
+  <link rel="stylesheet" href="../../../css/information.css">
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="titleBar">
+        <a href="../../main.html">Shopping Mall</a>
+      </div>
+      <div class="logIn">
+        <a onclick="logoutChk()" style="cursor: pointer;">로그아웃</a>
+      </div>
+      <div class="navigation">
+        <ul class="main_menu">
+          <li><a href="../../infoMain.html">INFORMATION</a></li>
+          <li><a href="#none">SELECTED ITEMS</a>
+            <ul class="sub_menu">
+              <li><a href="../newArrivals.html">NEW ARRIVALS</a></li>
+            </ul>
+            <ul class="sub_menu">
+              <li><a href="../outwears.html">OUTWEARS</a></li>
+              <li><a href="../knitwears.html">KNITWEARS</a></li>
+              <li><a href="../tops.html">TOPS</a></li>
+              <li><a href="../shirts.html">SHIRTS</a></li>
+            </ul>
+            <ul class="sub_menu">
+              <li><a href="../pants.html">PANTS</a></li>
+              <li><a href="../denim.html">DENIM</a></li>
+              <li><a href="../acc.html">ACC</a></li>
+              <li><a href="../shoes.html">SHOES</a></li>
+            </ul>
+          </li>
+          <li><a href="#none">COLLECTION</a>
+            <ul class="sub_menu">
+              <li><a href="../../COLLECTION/winter.html">2021 WINTER</a></li>
+              <li><a href="../../COLLECTION/fall.html">2021 FALL</a></li>
+              <li><a href="../../COLLECTION/summer.html">2021 SUMMER</a></li>
+              <li><a href="../../COLLECTION/spring.html">2021 SPRING</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <div class="newArrivals">
+        <ul class="items">
+          <li class="itemsCell">
+            <div class="itemsImg">
+              <img src="../../../images/SELECTEDITEM/new_arrivals/second.jpg">
+            </div>
+          </li>
+        </ul>
+        <ul class="items2">
+          <li class="itemsCell">
+            <div class="itemsInfo">
+              <div class="itemsInfo_category">SELECTED ITEM</div>
+              <br>
+              <div id="itemsInfo_name">(Selected)하이 베이지 첼시 부츠</div>
+              <div id="itemsInfo_price">179,100 KRW</div>
+              <p>
+                <br>
+                볼드 한 창이 유니크하고 매력적인 제품<br>
+                YKK 지퍼와 클래식한 첼시 부츠 디자인이 포인트인 제품<br>
+                Cow Skin의 가피와 Pig Skin의 내피로 제작되어 내구성이 좋으며 통풍이 잘 됨<br>
+                수제화로 제작되어 제작 기간이 소요됩니다<br>
+                <br>
+                재질 : 가피 (Cow Skin) 내피 (Pig Skin) <br>
+              </p>
+              <div class="itemSelectColor">
+                <select id="itemsColor">
+                  <option value="">Color</option>
+                  <option value="">---------------------------------------</option>
+                  <option value="beige">beige</option>
+                </select>
+              </div>
+              <div class="itemSelectSize">
+                <select id="itemsSize">
+                  <option value="">Size</option>
+                  <option value="">---------------------------------------</option>
+                  <option value="250">250</option>
+                  <option value="260">260</option>
+                  <option value="270">270</option>
+                  <option value="280">280</option>
+                  <option value="290">290</option>
+                  <option value="300">300</option>
+                </select>
+              </div>
+            </div>
+            <div class="paymentInfo">
+              <input type="button" value="BUY NOW" onclick="requestPay()">
+            </div>
+            <div class="cartInfo">
+              <input type="button" value="ADD TO CART" onclick="addCart()">
+            </div>
+          </li>
+        </ul>
+      </div>
+    </main>
+
+    <footer>
+      <small>Copyright by Hoseok Lee</small>
+    </footer>
+
+  </div>
+
+  <script type="text/javascript" src="../../../scripts/common.js"></script>
+</body>
+
+</html>

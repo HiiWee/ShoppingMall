@@ -1,0 +1,22 @@
+.newArrivals .items {
+  display: table;
+  margin-top: 5%;
+}
+.newArrivals .items .itemsCell {
+  /* background-color: red; */
+  display: table-cell;
+  padding: 5px;
+}
+.newArrivals .items .itemsInfo {
+  text-align: left;
+}
+.newArrivals .items .itemsInfo .itemsInfo_name {
+  text-decoration: none;
+  color:rgb(66, 66, 66);
+}
+.newArrivals .items .itemsInfo .itemsInfo_name:hover {
+  background-color: rgb(224, 224, 224);
+}
+.newArrivals img {
+  width: 470px;
+}

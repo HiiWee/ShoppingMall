@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Hoseok's Shopping Mall</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/menu.css">
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="titleBar">
+        <a href="main.html">Shopping Mall</a>
+      </div>
+      <div class="navigation">
+        <ul class="main_menu">
+          <li><a href="./infoMain.html">INFORMATION</a></li>
+          <li><a href="#">SELECTED ITEMS</a>
+            <ul class="sub_menu">
+              <li><a href="./SELECTEDITEMS/newArrivals.html">NEW ARRIVALS</a></li>
+            </ul>
+            <ul class="sub_menu">
+              <li><a href="./SELECTEDITEMS/outwears.html">OUTWEARS</a></li>
+              <li><a href="./SELECTEDITEMS/knitwears.html">KNITWEARS</a></li>
+              <li><a href="./SELECTEDITEMS/tops.html">TOPS</a></li>
+              <li><a href="./SELECTEDITEMS/shirts.html">SHIRTS</a></li>
+            </ul>
+            <ul class="sub_menu">
+              <li><a href="./SELECTEDITEMS/pants.html">PANTS</a></li>
+              <li><a href="./SELECTEDITEMS/denim.html">DENIM</a></li>
+              <li><a href="./SELECTEDITEMS/acc.html">ACC</a></li>
+              <li><a href="./SELECTEDITEMS/shoes.html">SHOES</a></li>
+            </ul>
+          </li>
+          <li><a href="#">COLLECTION</a>
+            <ul class="sub_menu">
+              <li><a href="./COLLECTION/winter.html">2021 WINTER</a></li>
+              <li><a href="./COLLECTION/fall.html">2021 FALL</a></li>
+              <li><a href="./COLLECTION/summer.html">2021 SUMMER</a></li>
+              <li><a href="./COLLECTION/spring.html">2021 SPRING</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="contentSignUp">
+      <ul class="signUpTitle">
+        <li>Sign Up</li>
+      </ul>
+      <ul class="signUpInfo">
+        <li>아이디</li>
+        <li><input id="signUpId" type="text" placeholder="ID"></li>
+        <li>비밀번호</li>
+        <li><input id="signUpPwd" type="password" placeholder="PWD"></li>
+        <li>비밀번호 재확인</li>
+        <li><input id="signUpPwdChk" type="password"></li>
+        <li>이름</li>
+        <li><input id="signUpName" type="text" placeholder="name"></li>
+        <li>생년월일</li>
+        <ul class="birthCategory">
+          <li><input id="birthYear" type="text" placeholder=""></li>
+          <li><select id="birthMonth">
+              <option value="">월</option>
+              <option value="2">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+            </select></li>
+          <li><input id="birthDay" type="text" placeholder="일"></li>
+        </ul>
+        <li>성별</li>
+        <li><input id="signUpGen" type="text" placeholder="성별"></li>
+        <li>휴대전화</li>
+        <li><input id="signUpPhnNum" type="text" placeholder="phone number('-'은 입력하지 마세요)"></li>
+        <li>E-Mail</li>
+        <li><input id="signUpMail" type="text"></li>
+      
+        <li><input class="signUpBtn" onclick="signUpChk()" type="button" value="회원가입"></li>
+      </ul>
+    </div>
+
+    <footer>
+      <small>Copyright by Hoseok Lee</small>
+    </footer>
+
+  </div>
+  <script type="text/javascript" src="../scripts/common.js"></script>
+</body>
+
+</html>

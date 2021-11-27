@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Hoseok's Shopping Mall</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/menu.css">
+  <link rel="stylesheet" href="../css/payment.css">
+</head>
+
+<body onLoad='javascript:loadPayProduct();'>
+  <div class="container">
+    <header class="header">
+      <div class="titleBar">
+        <a href="main.html">Shopping Mall</a>
+      </div>
+      <div class="logIn">
+        <a onclick="logoutChk()" style="cursor: pointer;">로그아웃</a>
+      </div>
+      <div class="navigation">
+        <ul class="main_menu">
+          <li><a href="./infoMain.html">INFORMATION</a></li>
+          <li><a href="#">SELECTED ITEMS</a>
+            <ul class="sub_menu">
+              <li><a href="./SELECTEDITEMS/newArrivals.html">NEW ARRIVALS</a></li>
+            </ul>
+            <ul class="sub_menu">
+              <li><a href="./SELECTEDITEMS/outwears.html">OUTWEARS</a></li>
+              <li><a href="./SELECTEDITEMS/knitwears.html">KNITWEARS</a></li>
+              <li><a href="./SELECTEDITEMS/tops.html">TOPS</a></li>
+              <li><a href="./SELECTEDITEMS/shirts.html">SHIRTS</a></li>
+            </ul>
+            <ul class="sub_menu">
+              <li><a href="./SELECTEDITEMS/pants.html">PANTS</a></li>
+              <li><a href="./SELECTEDITEMS/denim.html">DENIM</a></li>
+              <li><a href="./SELECTEDITEMS/acc.html">ACC</a></li>
+              <li><a href="./SELECTEDITEMS/shoes.html">SHOES</a></li>
+            </ul>
+          </li>
+          <li><a href="#">COLLECTION</a>
+            <ul class="sub_menu">
+              <li><a href="./COLLECTION/winter.html">2021 WINTER</a></li>
+              <li><a href="./COLLECTION/fall.html">2021 FALL</a></li>
+              <li><a href="./COLLECTION/summer.html">2021 SUMMER</a></li>
+              <li><a href="./COLLECTION/spring.html">2021 SPRING</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="contentPayment">
+      <ul class="paymentTitle">
+        <li>결제하기</li>
+      </ul>
+      <ul id="paymentInfo">
+        <li>|주문자|</li>
+        <li><input id="paymentName" type="text" placeholder="이름"></li><br>
+        <li>|배송지주소|</li>
+        <li><input id="paymentAddr" type="text" placeholder="주소"></li><br>
+        <li>|휴대폰번호|</li>
+        <li><input id="paymentPhone" type="text" placeholder="휴대폰번호"></li><br>
+        <li>|배송메시지|</li>
+        <li><input id="message" type="text"></li><br>
+        <li>|결제수단|</li>
+        <li>카드결제<input id="payMethod1" type="checkbox"> 무통장<input id="payMethod2" type="checkbox"> 휴대폰결제<input
+            id="payMethod3" type="checkbox"></li><br>
+        <li>|입금자명|</li>
+        <li><input id="depositor" type="text" placeholder="입금자명"></li><br>
+        <li>|입금은행|</li>
+        <ul class="depositBank">
+          <li>
+            <select id="bankType">
+              <option value="1">농협개인:352-0916-6521-53 이호석</option>
+              <option value="2">카카오개인:3333-13-4559324 이호석</option>
+            </select>
+          </li>
+        </ul>
+
+        <li><input id="orderPayBtn" onclick="orderPayChk()" type="button" value="Order"></li>
+      </ul>
+    </div>
+
+    <footer>
+      <small>Copyright by Hoseok Lee</small>
+    </footer>
+
+  </div>
+  
+  <script type="text/javascript" src="../scripts/common.js"></script>
+</body>
+
+</html>
+
+<!-- 
+  주문하는분
+  배송지주소
+  휴대폰번호
+  이메일
+  배송메시지
+  결제수단
+  이호석
+  입금은행
+ -->

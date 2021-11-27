@@ -1,0 +1,61 @@
+.contentPayment {
+  background-color: rgb(224, 224, 224);
+  margin: 0 auto;
+  position: relative;
+  width: 400px;
+  height: 620px;
+  margin-top: 20%;
+}
+.contentPayment ul {
+  list-style-type: none;
+}
+.contentPayment .paymentTitle {
+  margin: 0 auto;
+  font-weight: bold;
+}
+.contentPayment .paymentTitle {
+  width: 120px;
+}
+#paymentInfo {
+  width: 400px;
+  text-align: left;
+  font-weight: bold;
+}
+#paymentInfo li {
+  margin: 1% 1% 0 2%;
+}
+#paymentInfo li #paymentName {
+  width: 380px;
+  height: 30px;
+}
+#paymentInfo li #paymentAddr {
+  width: 380px;
+  height: 30px;
+}
+#paymentInfo li #paymentPhone {
+  width: 380px;
+  height: 30px;
+}
+#paymentInfo li #message {
+  width: 380px;
+  height: 30px;
+}
+#paymentInfo li .payMethod {
+  margin-right: 5%;
+}
+
+#paymentInfo li #depositor {
+  width: 380px;
+  height: 30px;
+}
+#paymentInfo li #bankType {
+  width: 380px;
+  height: 30px;
+}
+#paymentInfo li #orderPayBtn {
+  width: 380px;
+  height: 30px;
+  background-color: #000;
+  font-weight: bold;
+  color: white;
+}

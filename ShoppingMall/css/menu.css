@@ -1,0 +1,63 @@
+
+/*---------------------------- 헤더영역 : 메뉴바 ----------------------------*/
+.main_menu {
+  position: fixed;
+  z-index: 5;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.main_menu, .sub_menu {
+  list-style-type: none;
+}
+.navigation {
+  /* background-color: red; */
+}
+.main_menu {
+  /* background-color: orange; */
+  display: table;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: 20px;
+  /* border: 1px solid black; */
+}
+.main_menu > li {
+  /* background-color: yellow; */
+  float: left;
+  margin: 0 30px;
+}
+.main_menu > li > a{
+  text-decoration: none;
+  color:rgb(66, 66, 66);
+}
+.main_menu > li > a:hover{
+  background-color:rgb(175, 175, 175);
+  color: white;
+}
+.main_menu > li:hover .sub_menu {
+  /* 마우스 호버 설정 */
+  opacity: 1;
+  visibility: visible;
+}
+.sub_menu {
+  /* border: 1px solid green; */
+  clear: left;
+  display : table-cell;
+  /* 마우스 호버 설정 */
+  opacity: 0;
+  visibility: hidden;
+  transition:opacity 0.2s linear, visibility 0.2s linear;  
+}
+.sub_menu li {
+  width: 120px;
+  text-align: left;
+  /* border: solid 1px blue; */
+}
+.sub_menu a{
+  text-decoration: none;
+  color: rgb(66, 66, 66);
+}
+.sub_menu a:hover{
+  background-color: rgb(224, 224, 224);
+  color: white;
+}

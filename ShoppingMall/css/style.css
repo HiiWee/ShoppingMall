@@ -1,0 +1,294 @@
+@charset "utf-8";
+
+/*---------------------------- 전체영역 ----------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  margin: 0 auto;
+  text-align: center;
+  width: 960px;
+  /* background-color: crimson; */
+}
+
+/*---------------------------- 헤더영역 : 쇼핑몰제목 ----------------------------*/
+.header .titleBar {
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.header .titleBar a {
+  text-decoration: none;
+  color: rgb(66, 66, 66);
+  font-size: 30pt;
+  font-weight: bold;
+}
+
+/*---------------------------- 메인영역 : 메인베너 ----------------------------*/
+main {
+  margin-top: 20%;
+}
+.mainTitle .mainTitle_banner {
+  position: relative;
+  z-index: 1;
+  width: 960px;
+}
+.mainTitle .mainTitle_title a {
+  position: relative;
+  z-index: 3;
+  bottom: 1200px;
+  font-size: 60pt;
+  font-weight: bold;
+  color: rgb(66, 66, 66);
+}
+
+.mainTitle .mainEntrance {
+  width: 155px;
+  position: relative;
+  display: inline-block;
+  z-index: 2;
+  bottom: 1000px;
+}
+
+.mainEntrance a {
+  font-size: 15pt;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  border: 1px solid #fff;
+  padding: 4px;
+  border-radius: 3px;
+}
+
+.mainEntrance a:hover {
+  background-color: rgb(161, 161, 161);
+  color:rgb(255, 255, 255);
+}
+
+/* ----------------------------infoMain.html ----------------------------*/
+.mainTitle .infoBanner {
+  width: 960px;
+  margin-top: 20px;
+}
+.addrList, .openTimeList {
+  list-style-type: none;
+  text-align: left;
+  font-weight: bolder;
+}
+.openTimeList {
+  margin-top: 15px;
+}
+
+/* ----------------------------로그인 버튼 영역 ----------------------------*/
+.logIn {
+  /* background-color: red; */
+  display: inline-block;
+  position: fixed;
+  z-index: 10;
+  left: 10px;
+  top: 10px;
+}
+.logIn a {
+  text-decoration: none;
+  color:rgb(66, 66, 66);
+}
+.logIn a{
+  text-decoration: none;
+  color: rgb(66, 66, 66);
+}
+.logIn a:hover{
+  background-color: rgb(224, 224, 224);
+  color: white;
+}
+
+
+/* ----------------------------login_main.html영역 ----------------------------*/
+.contentLogin {
+  background-color: rgb(224, 224, 224);
+  margin: 0 auto;
+  position: relative;
+  width: 400px;
+  height: 200px;
+  margin-top: 20%;
+}
+.contentLogin ul {
+  list-style-type: none;
+}
+.contentLogin .loginTitle {
+  margin: 0 auto;
+}
+.contentLogin .loginTitle {
+  width: 120px;
+}
+
+.totalLogin {
+  margin: 0 auto;;
+  width: 400px;
+}
+.totalLogin li {
+  margin-top: 1%;
+}
+.totalLogin li #loginID {
+  width: 380px;
+  height: 30px;
+}
+.totalLogin li #loginPWD {
+  width: 380px;
+  height: 30px;
+}
+.totalLogin li #loginBtn {
+  background-color: #fff;
+  width: 380px;
+  height: 50px;
+}
+.signManage li {
+  display: inline-block;
+  font-size: 10pt;
+}
+.signManage #signUp {
+  margin-left: 100px;
+}
+.signManage li a{
+  text-decoration: none;
+  color: black;
+}
+.signManage li a:hover {
+  color:rgb(139, 139, 139);
+}
+
+/* ----------------------------findId_main.html, findPwd_main.html 영역 ----------------------------*/
+.contentFindInfo {
+  background-color: rgb(224, 224, 224);
+  margin: 0 auto;
+  position: relative;
+  width: 400px;
+  height: 365px;
+  margin-top: 20%;
+}
+.contentFindInfo ul {
+  list-style-type: none;
+}
+.contentFindInfo .findInfoTitle {
+  margin: 0 auto;
+  font-weight: bold;
+}
+.contentFindInfo .findInfoTitle {
+  width: 120px;
+}
+
+.userInfo {
+  width: 400px;
+  text-align: left;
+  font-weight: bold;
+}
+.userInfo li {
+  margin: 1% 1% 0 2%;
+
+}
+.userInfo li #userName {
+  width: 380px;
+  height: 30px;
+}
+.userInfo li #userPhnNum {
+  width: 380px;
+  height: 30px;
+}
+.userInfo li #certiCode {
+  width: 380px;
+  height: 30px;
+}
+/* findId_main.html */
+.userInfo li #userId {
+  width: 380px;
+  height: 30px;
+}
+.userInfo li .findInfoBtn {
+  background-color: #fff;
+  width: 380px;
+  height: 50px;
+}
+/* ----------------------------signUp.html----------------------------*/
+.contentSignUp {
+  background-color: rgb(224, 224, 224);
+  margin: 0 auto;
+  position: relative;
+  width: 400px;
+  height: 620px;
+  margin-top: 20%;
+}
+.contentSignUp ul {
+  list-style-type: none;
+}
+.contentSignUp .signUpTitle {
+  margin: 0 auto;
+  font-weight: bold;
+}
+.contentSignUp .signUpTitle {
+  width: 120px;
+}
+.signUpInfo {
+  width: 400px;
+  text-align: left;
+  font-weight: bold;
+}
+.signUpInfo li {
+  margin: 1% 1% 0 2%;
+}
+.signUpInfo li #signUpId {
+  width: 380px;
+  height: 30px;
+}
+.signUpInfo li #signUpPwd {
+  width: 380px;
+  height: 30px;
+}
+.signUpInfo li #signUpPwdChk {
+  width: 380px;
+  height: 30px;
+}
+.signUpInfo li #signUpName {
+  width: 380px;
+  height: 30px;
+}
+.signUpInfo li #birthYear {
+  width: 90px;
+  height: 30px;
+  margin: 0 auto;
+}
+.signUpInfo li #birthMonth {
+  width: 100px;
+  height: 36px;
+}
+.signUpInfo li #birthDay {
+  width: 90px;
+  height: 30px;
+}
+.signUpInfo .birthCategory {
+  overflow: hidden;
+}
+.signUpInfo .birthCategory li {
+  float: left;
+}
+.signUpInfo :nth-child(11) {
+  clear: left;
+}
+.signUpInfo li #signUpGen {
+  width: 380px;
+  height: 30px;
+}
+.signUpInfo li #signUpPhnNum {
+  width: 380px;
+  height: 30px;
+}
+.signUpInfo li #signUpMail {
+  width: 380px;
+  height: 30px;
+}
+.signUpInfo li .signUpBtn {
+  background-color: #fff;
+  width: 380px;
+  height: 50px;
+}

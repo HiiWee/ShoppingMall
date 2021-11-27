@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Hoseok's Shopping Mall</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/menu.css">
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="titleBar">
+        <a href="main.html">Shopping Mall</a>
+      </div>
+      <div class="navigation">
+        <ul class="main_menu">
+          <li><a href="./infoMain.html">INFORMATION</a></li>
+          <li><a href="#">SELECTED ITEMS</a>
+            <ul class="sub_menu">
+              <li><a href="./SELECTEDITEMS/newArrivals.html">NEW ARRIVALS</a></li>
+            </ul>
+            <ul class="sub_menu">
+              <li><a href="./SELECTEDITEMS/outwears.html">OUTWEARS</a></li>
+              <li><a href="./SELECTEDITEMS/knitwears.html">KNITWEARS</a></li>
+              <li><a href="./SELECTEDITEMS/tops.html">TOPS</a></li>
+              <li><a href="./SELECTEDITEMS/shirts.html">SHIRTS</a></li>
+            </ul>
+            <ul class="sub_menu">
+              <li><a href="./SELECTEDITEMS/pants.html">PANTS</a></li>
+              <li><a href="./SELECTEDITEMS/denim.html">DENIM</a></li>
+              <li><a href="./SELECTEDITEMS/acc.html">ACC</a></li>
+              <li><a href="./SELECTEDITEMS/shoes.html">SHOES</a></li>
+            </ul>
+          </li>
+          <li><a href="#">COLLECTION</a>
+            <ul class="sub_menu">
+              <li><a href="./COLLECTION/winter.html">2021 WINTER</a></li>
+              <li><a href="./COLLECTION/fall.html">2021 FALL</a></li>
+              <li><a href="./COLLECTION/summer.html">2021 SUMMER</a></li>
+              <li><a href="./COLLECTION/spring.html">2021 SPRING</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="contentLogin">
+      <ul class="loginTitle">
+        <li>LOGIN</li>
+      </ul>
+      <ul class="totalLogin">
+        <li><input id="loginID" type="text" placeholder="ID" onkeyup="enterKey()"></li>
+        <li><input id="loginPWD" type="password" placeholder="PASSWORD" onkeyup="enterKey()"></li>
+        <li><input id="loginBtn" onclick="loginChk()" type="button" value="Sign In"></li>
+      </ul>
+      <ul class="signManage">
+        <li>Forgot Your <a id="findId" href="./findId_main.html">Id?</a></li>
+        <li>or <a id="findPwd" href="./findPwd_main.html">Password?</a></li>
+        <li><a id="signUp" href="./signUp.html">Create Account</a></li>
+      </ul>
+    </div>
+
+    <footer>
+      <small>Copyright by Hoseok Lee</small>
+    </footer>
+
+  </div>
+  <script type="text/javascript" src="../scripts/common.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+.mainTitle .collectionBanner {
+  width: 960px;
+  margin-top: 20px;
+}
+.seasonInfo, .goBackLink {
+  list-style-type: none;
+  text-align: left;
+  font-weight: bolder;
+}
+.goBackLink {
+  margin-top: 15px;
+}
+.goBackLink a {
+  text-decoration: none;
+  color:rgb(66, 66, 66);
+}
+.goBackLink a:hover {
+  background-color: rgb(224, 224, 224);
+}

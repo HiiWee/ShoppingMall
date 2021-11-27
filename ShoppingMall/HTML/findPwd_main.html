@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Hoseok's Shopping Mall</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/menu.css">
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="titleBar">
+        <a href="main.html">Shopping Mall</a>
+      </div>
+      <div class="navigation">
+        <ul class="main_menu">
+          <li><a href="./infoMain.html">INFORMATION</a></li>
+          <li><a href="#">SELECTED ITEMS</a>
+            <ul class="sub_menu">
+              <li><a href="./SELECTEDITEMS/newArrivals.html">NEW ARRIVALS</a></li>
+            </ul>
+            <ul class="sub_menu">
+              <li><a href="./SELECTEDITEMS/outwears.html">OUTWEARS</a></li>
+              <li><a href="./SELECTEDITEMS/knitwears.html">KNITWEARS</a></li>
+              <li><a href="./SELECTEDITEMS/tops.html">TOPS</a></li>
+              <li><a href="./SELECTEDITEMS/shirts.html">SHIRTS</a></li>
+            </ul>
+            <ul class="sub_menu">
+              <li><a href="./SELECTEDITEMS/pants.html">PANTS</a></li>
+              <li><a href="./SELECTEDITEMS/denim.html">DENIM</a></li>
+              <li><a href="./SELECTEDITEMS/acc.html">ACC</a></li>
+              <li><a href="./SELECTEDITEMS/shoes.html">SHOES</a></li>
+            </ul>
+          </li>
+          <li><a href="#">COLLECTION</a>
+            <ul class="sub_menu">
+              <li><a href="./COLLECTION/winter.html">2021 WINTER</a></li>
+              <li><a href="./COLLECTION/fall.html">2021 FALL</a></li>
+              <li><a href="./COLLECTION/summer.html">2021 SUMMER</a></li>
+              <li><a href="./COLLECTION/spring.html">2021 SPRING</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="contentFindInfo">
+      <ul class="findInfoTitle">
+        <li>Find User ID</li>
+      </ul>
+      <ul class="userInfo">
+        <li>아이디</li>
+        <li><input id="userId" type="text" placeholder="id"></li>
+        <li>이름</li>
+        <li><input id="userName" type="text" placeholder="name"></li>
+        <li>휴대전화</li>
+        <li><input id="userPhnNum" type="text" placeholder="phone number('-'은 입력하지 마세요)"></li>
+        <li><input class="findInfoBtn" onclick="getCertiCode2()" type="button" value="인증번호 받기"></li>
+        <li><input id="certiCode" type="text" placeholder="인증번호 입력"></li>
+        <li><input class="findInfoBtn" onclick="findPwChk()" type="button" value="비밀번호 찾기"></li>
+      </ul>
+    </div>
+
+    <footer>
+      <small>Copyright by Hoseok Lee</small>
+    </footer>
+
+  </div>
+  <script type="text/javascript" src="../scripts/common.js"></script>
+</body>
+
+</html>
