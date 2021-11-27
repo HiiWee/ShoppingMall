@@ -5,3 +5,6 @@
 ---------
 ### 사용 에디터
 > Visual Studio Code
+### 진행상황
+> 2021-11-28 완성
+> https://hiiwee.github.io/ShoppingMall/ShoppingMall/index.html
